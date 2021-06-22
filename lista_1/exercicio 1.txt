@@ -1,0 +1,11 @@
+resposta exercicio 1
+
+a -   float 
+b -   float 
+c -   string   
+d -   inteiro   
+e -   boolean  
+f -   string   
+g -   string   
+h -   string   
+i -   boolean
