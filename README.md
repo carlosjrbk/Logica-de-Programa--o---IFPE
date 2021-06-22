@@ -1,2 +1,2 @@
 # Logica de Programação - IFPE
- Exercicios 
+ Exercicios exercicios das aulas de logica de programção
