@@ -4,6 +4,7 @@ while True:
     if num not in valores:
         valores.append(num)
     if num == 0:
-        valores.sort(reverse=True)
-        print(valores)
+        valores.reverse()
         break
+for i in valores:
+    print(i)
