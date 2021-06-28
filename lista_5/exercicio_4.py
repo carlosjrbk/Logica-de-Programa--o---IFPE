@@ -1,8 +1,11 @@
-lista = : [[‘Vectra’, 9], [‘Gol’, 10], [‘Corsa’, 11], [‘Fit’,12.5]]
-
-
-for i in enumerate(lista):
-  consumo = 1000 / len([0]).len([1])
-  gasto = 2.25 * len([1])
-  print(f'{i+1} - {carro.nome:<10} - {carro.rendimento:>5} - {consumo: >6.2f} - R$ {gasto:.2f}'
-
+listaCarro = [['Vectra', 9], ['Gol', 10], ['Corsa', 11], ['Fit', 12.5]]
+precoGasolina = 4.69
+distancia = 1000
+print('Custo de Comb. --------------------------veiculo')
+print("-"*45)
+for v in listaCarro:
+    consumo = 1000 / v[1]
+    Custo = consumo * precoGasolina
+    print(f'{Custo:.2f}-----------------------------------', v[0])
+if v[1] > len(listaCarro):
+  print('Modelo mais economico-->', v[0])

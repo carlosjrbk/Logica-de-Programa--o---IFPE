@@ -1,9 +1,9 @@
 valores = []
-while !=0:
-    num = int(input("Digite um numero inteiro: "))
-    if num not in valores:
-        valores.append(num)
-    if num == "":
+while True:
+    num = input("Digite um numero inteiro: ")
+    valores.append(num)
+    if num == " ":
+        valores.sort()
         break
-valores.sort()
-print(valores)
+print(valores[::-1])
+
