@@ -1,30 +1,30 @@
-nomes = []
-valores = []
+n = []
+v = []
 cont = 0
 
 for l in range(5):
-  linha = []
-  produto = input(f'Digite o nome do produto {cont + 1}: [Se o nome for maior que 10 caracteres, favor abreviar.] ').upper()
-  while len(produto) > 10:
-    print("Você digitou mais de 10 caracteres, por gentileza considerar este limite e abreviar o nome do produto.")
+  l = []
+  pr = input(f'NOME DO PRODUTO? {cont + 1}: [maior que 10 caracteres, abreviar.] ').upper()
+  while len(pr) > 10:
+    print("ERRO!! MAIS DE DEZ CARACTERES DIGITADOS.")
     print("")
-    produto = input(f'Digite o nome do produto {cont + 1}: [Se o nome for maior que 10 caracteres, favor abreviar.] ').upper()
-  nomes.append(produto)
-  compra = float(input(f'Digite o valor de compra do produto {produto}: R$').replace(",","."))
-  linha.append(compra)
-  venda = float(input(f'Digite o valor de venda do produto {produto}: R$').replace(",","."))
-  linha.append(venda)
-  valores.append(linha)
+    pr = input(f'NOME DO PRODUTO? {cont + 1}: [maior que 10 caracteres, abreviar.] ').upper()
+  n.append(pr)
+  compra = float(input(f'VALOR DO PRODUTO? {pr}: R$').replace(",","."))
+  l.append(compra)
+  ve = float(input(f'VALOR DE VENDA DO PRODUTO? {pr}: R$').replace(",","."))
+  l.append(ve)
+  v.append(l)
   cont = cont + 1
   print("")
 
-for produto in range(0, 10):
-  busca = input("Digite o nome do produto para visualizar o lucro: ").upper()
-  indiceProduto = nomes.index(busca)
-  lucro = valores[indiceProduto][1] - valores[indiceProduto][0]
+for pr in range(0, 10):
+  busca = input("NOME DO PRODUTO PARA VIZUALIZAR O LUCRO: ").upper()
+  indiceProduto = n.index(busca)
+  lucro = v[indiceProduto][1] - v[indiceProduto][0]
   print("")
-  print("O lucro obtido com a venda deste produto foi de: R${:.2f}".format(lucro))
+  print("O LUCRO COM O PRODUTO FOI DE: R${:.2f}".format(lucro))
   print("")
-  pergunta = input("Precisa visualizar o lucro de outro produto?: [S | N]")
+  pergunta = input("QUER VER O LUCRO DE OUTRO PRODUTO?: [S | N]").upper()
   if pergunta != "S":
     break

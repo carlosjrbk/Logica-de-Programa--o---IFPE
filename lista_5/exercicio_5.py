@@ -6,6 +6,8 @@ for m in range(0, len(ms)):
 
 mAnual = sum(temp)/len(temp)
 print('-'*45)
+print(f'Temperatura média anual: {mAnual}')
+print('-'*45)
 print('Meses Com a Temperatura acima da media')
 print("-"*45)
 for m in range(0, len(temp)):
